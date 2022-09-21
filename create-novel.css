@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --white-color: #fff;
+  --gray-color: #e2e2f2;
+  --black-color: #000;
+  --main-color: purple
+}
+
+body{
+  background: var(--gray-color);
+  font-family: poppins
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gray-color);
+  padding: 1rem;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.21)
+}
+
+header .logo img{
+  width: 3rem;
+  height: 3rem;
+}
+
+header .nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .nav li a{
+  margin: 1rem;
+  color: var(--black-color);
+  font-size: 1.5rem;
+  cursor: pointer
+  
+}
+
+.close-btn{
+  display: none;
+}
+
+.nav-link{
+  display: none;
+}
+
+.menu-link{
+  padding: 1rem;
+  width: 8rem;
+  background: purple;
+  color: var(--white-color);
+  text-align: center;
+  border-radius: .5rem;
+  transform: translateY(-300px);
+  opacity: 0;
+  transition: .3s
+}
+
+.activ{
+  opacity: 1;
+  transform: translateY(100px);
+}
+
+.menu-link li, a{
+  color: var(--white-color);
+  font-size: .7rem;
+  margin-bottom: .5rem;
+}
+
+.menu{
+  background: var(--main-color);
+  padding: 1rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: .3rem;
+}
+
+.menu-btn{
+  background: var(--main-color);
+  padding: .7rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  display: none;
+  border-radius: .3rem;
+}
+
+.menu div{
+  width: 100%;
+  height: 100%;
+  position: relative
+}
+
+.menu-btn div{
+  width: 100%;
+  height: 100%;
+}
+
+.menu div .line{
+  width: 100%;
+  height: 5px;
+  border-radius: 50px;
+  display: block;
+  background: var(--white-color);
+  margin-bottom: .5rem;
+}
+
+.menu-btn div .line{
+  width: 100%;
+  height: 2px;
+  border-radius: 50px;
+  display: block;
+  background: var(--white-color);
+  margin-bottom: .5rem;
+}
+
+.form-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh
+}
+
+.form-body div{
+  width: 20rem;
+  text-align: center;
+  background: var(--white-color);
+  padding: 2rem;
+  border-radius: .5rem
+}
+
+.form-body div h1{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+form{
+  display: grid;
+  place-items: center
+}
+
+form input, textarea{
+  width: 100%;
+  background: #e2e2f2;
+  border-radius: .5rem;
+  padding: .8rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border: 0;
+} 
+
+form input[type="submit"]{
+  background: purple;
+  color: var(--white-color);
+  cursor: pointer
+}
+
+.container{
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 40%;
+}
+
+/*mobile media query*/
+@media (max-width: 500px) {
+  header .nav{
+    background: purple;
+    position: absolute;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: -100%;
+    transition: .3s
+  }
+  
+  header .nav li a{
+  color: #fff;
+  font-size: .9rem;
+}
+
+.close-btn{
+  display: initial;
+  margin-left: 19rem;
+}
+
+header .nav li{
+  margin-bottom: 1px;
+  margin-top: 3rem;
+}
+
+.nav-link{
+  display: initial;
+}
+  
+  .menu{
+    display: none
+  }
+  
+  .menu-btn{
+    display: initial
+  }
+}
