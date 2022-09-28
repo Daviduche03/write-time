@@ -138,7 +138,7 @@ header .nav li a {
 }
 
 .home {
-    background: url("/assests/img/joel-muniz-XqXJJhK-c08-unsplash.jpg");
+    background: url("assests/img/joel-muniz-XqXJJhK-c08-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 10rem;
