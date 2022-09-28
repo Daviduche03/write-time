@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  text-decoration: none;
-  scroll-behavior: smooth;
-=======
 * {
     padding: 0;
     margin: 0;
@@ -16,7 +5,6 @@
     list-style-type: none;
     text-decoration: none;
     scroll-behavior: smooth;
->>>>>>> 4d9a25b (new changes)
 }
 
 :root {
@@ -26,14 +14,8 @@
     --main-color: purple
 }
 
-<<<<<<< HEAD
-body{
-  background: var(--gray-color);
-  font-family: poppins
-=======
 body {
     background: var(--gray-color);
->>>>>>> 4d9a25b (new changes)
 }
 
 header {
