@@ -22,3 +22,6 @@ close_btn.addEventListener('click', () =>{
     nav.style.left = '-100%'
 })
 
+window.addEventListener('scroll', ()=>{
+    nav.style.left = '-100%'
+})

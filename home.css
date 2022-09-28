@@ -10,7 +10,7 @@
 }
 
 :root {
-    --white-color: #fff;
+    --white-color: #eee;
     --gray-color: #e2e2f2;
     --black-color: #000;
     --main-color: purple
@@ -63,17 +63,16 @@ header .nav li a {
     text-align: center;
     border-radius: .5rem;
     transform: translateY(-300px);
-    opacity: 0;
+    display: none;
     transition: .3s
 }
 
 .activ {
-    opacity: 1;
     transform: translateY(-3px);
+    display: block
 }
 
-.menu-link li,
-a {
+.menu-link li, a {
     color: var(--black-color);
     font-size: .9rem;
     margin-bottom: .5rem;
@@ -142,7 +141,6 @@ a {
     background: url("/assests/img/joel-muniz-XqXJJhK-c08-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 1rem;
     height: 10rem;
     display: grid;
     place-items: center;
@@ -154,31 +152,63 @@ a {
     width: 70%;
 }
 
-.home div h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    padding: .7rem;
-    border-radius: .7rem;
-    color: var(--gray-color)
-}
-
-.home div p {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.home div input {
-    padding: .8rem;
-    width: 100%;
+.home input {
+    padding: 1rem;
+    width: 80%;
     outline: none;
     border: 0;
-    color: var(--black-color)
+    color: var(--black-color);
+    background: var(--white-color);
+    border-radius: .3rem;
+    text-align: center
 }
 
-.home div input[type="text"] {
-    background: var(--gray-color);
-    width: 100%;
-    border-radius: .5rem
+.book-display {
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.book-display h2 {
+    font-size: 2rem;
+}
+
+.books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.book-container {
+    margin: 1rem;
+}
+
+.book-container h3 {
+    font-size: 1.5rem;
+}
+
+.book-container small {
+    font-size: 1rem;
+}
+
+.book-container .book {
+    width: 13rem;
+    background: var(--white-color);
+    padding: 10px;
+    height: 15rem;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.book-container .book img {
+    width: 70%;
+    height: 70%;
+    box-shadow: var(--box-shadow);
 }
 
 

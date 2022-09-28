@@ -8,8 +8,7 @@
 
     <title>Writetime - Login</title>
     <link rel="stylesheet" href="home.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -21,14 +20,14 @@
             <span class="material-icons close-btn">
                 highlight_off
             </span>
-            <li><a href="">Home</a></li>
-            <li><a href="">Create Novel</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="create-novel.html">Create Novel</a></li>
             <li><a href="">History</a></li>
             <div class="nav-link">
-                <li><a href="">Dashboard</a></li>
-                <li><a href="">Profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            <li><a href="">Change password</a></li>
                 <li><a href="">Logout</a></li>
-                <li><a href=""></a></li>
             </div>
         </ul>
 
@@ -53,19 +52,63 @@
     </header>
     <div class="container">
         <div class="menu-link">
-            <li><a href="">Dashboard</a></li>
-            <li><a href="">Profile</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="">Change password</a></li>
             <li><a href="">Logout</a></li>
-            <li><a href=""></a></li>
         </div>
     </div>
 
     <div class="home">
-        <div>
-            <input type="text" name="" id="">
-        </div>
-
+        <input type="search" name="" id="" placeholder="search novels..">
     </div>
+
+    <!--Book display start-->
+    <div class="book-display">
+        <h2>Best Seller Book</h2>
+        <div class="books">
+            <a href="home.html">
+                <div class="book-container" data-aos="zoom-in-left">
+                    <div class="book">
+                        <img src="assests/img/First.png" alt="love at first sight" />
+                    </div>
+                    <h3>Love at first sight</h3>
+                    <small>best selling</small>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="book-container" data-aos="zoom-in-right">
+                    <div class="book">
+                        <img src="assests/img/Fairy.png" alt="fairy tale" />
+                    </div>
+                    <h3>Fairy tales</h3>
+                    <small>best selling</small>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="book-container" data-aos="zoom-in-left">
+                    <div class="book">
+                        <img src="assests/img/Love.png" alt="love story" />
+                    </div>
+                    <h3>Love story</h3>
+                    <small>best selling</small>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="book-container" data-aos="zoom-in-right">
+                    <div class="book">
+                        <img src="assests/img/compress.png" alt="princess" />
+                    </div>
+                    <h3>Princess</h3>
+                    <small>best selling</small>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--Book display end-->
 
     <script src="index.js">
         main.js
