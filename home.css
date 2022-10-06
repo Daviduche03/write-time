@@ -1,143 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #000;
 }
 
 :root {
-    --white-color: #eee;
-    --gray-color: #e2e2f2;
-    --black-color: #000;
-    --main-color: purple
+  --white-color: #eee;
+  --gray-color: #e2e2f2;
+  --black-color: #000;
+  --main-color: purple;
+  --white: #fff
 }
 
 body {
-    background: var(--gray-color);
-    font-family: poppins
+  background: var(--white);
+  font-family: poppins
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--gray-color);
-    padding: 1rem;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3), 0 3px 21px 0 rgba(0, 0, 0, 0.21)
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gray-color);
+  padding: .6rem;
 }
 
-header .logo img {
-    width: 3rem;
-    height: 3rem;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo h1 {
+  color: var(--black-color);
 }
 
-header .nav li a {
-    margin: 1rem;
-    color: var(--black-color);
-    font-size: 1.5rem;
-    cursor: pointer
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-.close-btn {
-    display: none;
-}
-
-.nav-link {
-    display: none;
-}
-
-.menu-link {
-    padding: 1rem;
-    width: 8rem;
-    background: var(--gray-color);
-    text-align: center;
-    border-radius: .5rem;
-    transform: translateY(-300px);
-    display: none;
-    transition: .3s
-}
-
-.activ {
-    transform: translateY(-3px);
-    display: block
-}
-
-.menu-link li, a {
-    color: var(--black-color);
-    font-size: .9rem;
-    margin-bottom: .5rem;
-}
-
-.menu {
-    background: var(--main-color);
-    padding: 1rem;
-    cursor: pointer;
-    display: grid;
-    place-items: center;
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: .3rem;
-}
-
-.menu-btn {
-    background: var(--main-color);
-    padding: .7rem;
-    cursor: pointer;
-    display: grid;
-    place-items: center;
-    width: 3rem;
-    height: 3rem;
-    display: none;
-    border-radius: .3rem;
-}
-
-.menu div {
-    width: 100%;
-    height: 100%;
-    position: relative
-}
-
-.menu-btn div {
-    width: 100%;
-    height: 100%;
-}
-
-.menu div .line {
-    width: 100%;
-    height: 5px;
-    border-radius: 50px;
-    display: block;
-    background: var(--white-color);
-    margin-bottom: .5rem;
-}
-
-.menu-btn div .line {
-    width: 100%;
-    height: 2px;
-    border-radius: 50px;
-    display: block;
-    background: var(--white-color);
-    margin-bottom: .5rem;
-}
-
-.container {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    right: 40%
+.profile-img img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
 }
 
 .home {
+<<<<<<< HEAD
     background: url("assests/img/joel-muniz-XqXJJhK-c08-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -145,114 +66,93 @@ header .nav li a {
     display: grid;
     place-items: center;
     filter: brightness(2px)
+=======
+  width: 100%;
+  height: 10rem;
+>>>>>>> 57aa59c (main)
 }
 
-.home div {
-    text-align: center;
-    width: 70%;
+.home .img {
+  margin: 0rem;
 }
 
-.home input {
-    padding: 1rem;
-    width: 80%;
-    outline: none;
-    border: 0;
-    color: var(--black-color);
-    background: var(--white-color);
-    border-radius: .3rem;
-    text-align: center
+.home .img img {
+  width: 100%;
+  height: 25rem;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .home .img img {
+    height: 15rem;
+    border-radius: 1rem;
+  }
+  .home .img {
+  margin: .8rem;
+}
 }
 
 .book-display {
-    padding: 5rem 1rem;
-    text-align: center;
+  padding: 5rem 1rem;
+  text-align: center;
 }
 
 .book-display h2 {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+
+.book-link {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-link a {
+  color: var(--main-color);
 }
 
 .books {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-    text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 1rem;
 }
 
 .book-container {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .book-container h3 {
-    font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .book-container small {
-    font-size: 1rem;
+  font-size: .8rem;
 }
 
 .book-container .book {
-    width: 13rem;
-    background: var(--white-color);
-    padding: 10px;
-    height: 15rem;
-    display: grid;
-    place-items: center;
-    margin-bottom: 1rem;
-    border-radius: .3rem;
-    box-shadow: var(--box-shadow);
+  width: 13rem;
+  background: var(--gray-color);
+  padding: 10px;
+  height: 15rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  border-radius: .3rem;
+  box-shadow: var(--box-shadow);
+}
+
+@media only screen and (max-width: 600px) {
+  .book-container .book {
+    width: 8rem;
+    height: 11rem;
+  }
 }
 
 .book-container .book img {
-    width: 70%;
-    height: 70%;
-    box-shadow: var(--box-shadow);
-}
-
-
-/*mobile media query*/
-@media (max-width: 500px) {
-    header .nav {
-        background: purple;
-        position: absolute;
-        display: block;
-        padding: 1rem;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        top: 0;
-        right: 0;
-        left: -100%;
-        transition: .3s
-    }
-
-    header .nav li a {
-        color: #fff;
-        font-size: .9rem;
-    }
-
-    .close-btn {
-        display: initial;
-        margin-left: 19rem;
-    }
-
-    header .nav li {
-        margin-bottom: 1px;
-        margin-top: 3rem;
-    }
-
-    .nav-link {
-        display: initial;
-    }
-
-    .menu {
-        display: none
-    }
-
-    .menu-btn {
-        display: initial
-    }
+  width: 70%;
+  height: 70%;
+  box-shadow: var(--box-shadow);
 }

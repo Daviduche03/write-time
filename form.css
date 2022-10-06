@@ -7,7 +7,7 @@
 }
 
 body{
-  background: #e2e2f2;
+  background: #4A0245;
   font-family: poppins
 }
 
@@ -20,19 +20,17 @@ body{
   margin-right: 1rem;
 }
 
-.login img{
-  width: 15rem;
-  margin-bottom: 1rem;
-}
 
 .login h1{
   margin-bottom: 1rem;
-  color: purple;
+  color: #fff;
+  text-align: left
 }
 
 .login p{
   margin-bottom: 1rem;
-  text-align: center
+  text-align: center;
+  color: orange;
 }
 
 form{
@@ -43,12 +41,11 @@ form .input{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
+  background: #830b83;
   padding: 0;
-  border-radius: 20rem;
+  border-radius: .7rem;
   margin: 1rem;
-  width: 100%;
-  border: 1px solid #fff;
+  width: 95%;
 }
 
 form .input span{
@@ -59,33 +56,44 @@ form .input span{
 form .input input{
   border: 0;
   outline: none;
+  color: #fff;
   background: transparent;
   width: 100%;
 }
 
+form .input input::placeholder{
+  color: #fff;
+}
+
 form .submit{
-  width: 110%;
+  width: 105%;
   text-align: center
 }
 
 form .submit input[type="submit"]{
-  padding: .8rem;
-  background: purple;
+  padding: 1rem;
+  background: orange;
   color: #fff;
   border: none;
+  margin-top: 1rem;
   width: 90%;
-  border-radius: 20rem
+  border-radius: .7rem
 }
 
 form p{
   margin-top: 2rem;
   font-size: small;
+  color: orange
 }
 
 form a{
-  color: purple
+  color: #fff
 }
 
 .register-img{
     margin-top: 10rem;
+}
+
+span{
+  color: orange;
 }
