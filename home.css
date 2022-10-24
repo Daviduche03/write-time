@@ -40,8 +40,8 @@ header {
   align-items: center;
 }
 
-.logo h1 {
-  color: var(--black-color);
+.logo h2{
+  color: var(--main-color);
 }
 
 .profile {
@@ -51,33 +51,35 @@ header {
   gap: 1rem;
 }
 
+.profile-img{
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
 .profile-img img {
   border-radius: 50%;
+  border: 2px solid var(--main-color);
   width: 3rem;
   height: 3rem;
 }
 
 .home {
+  width: 100%;
+  background: url("assests/img/images2.jpeg");
+  background-size: cover;
+  background-posiion: center;
+  background-repeat: no-repeat;
+  height: 18rem;
+  display: grid;
+  place-items: center;
+}
+
+.search-box{
+  display: grid;
+  place-items: center;
+  width: 100%;
 <<<<<<< HEAD
-    background: url("assests/img/joel-muniz-XqXJJhK-c08-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 10rem;
-    display: grid;
-    place-items: center;
-    filter: brightness(2px)
-=======
-  width: 100%;
-  height: 10rem;
->>>>>>> 57aa59c (main)
-}
-
-.home .img {
-  margin: 0rem;
-}
-
-.home .img img {
-  width: 100%;
   height: 30rem;
   
 }
@@ -90,7 +92,25 @@ header {
   }
   .home .img {
   margin: .8rem;
+=======
 }
+
+#input {
+  background: transparent;
+  padding: 1rem;
+  visibility: hidden;
+  border: 0;
+  outline: none;
+  text-align: center;
+  width: 100%;
+  transition: ease-in .3s;
+>>>>>>> 6362d1a (new)
+}
+
+#input.active{
+  transform: translateY(-40px);
+  background: #5e7c84;
+  visibility: visible;
 }
 
 .book-display {
